@@ -9,7 +9,7 @@ const useAuthCall = () => {
   const register = async (userInfo) => {
     dispatch(fetchStart())
     try {
-        const {data} = await axios.post("https://10002.fullstack.clarusway.com/users/",userInfo)
+        const {data} = await axios.post("https://18113.fullstack.clarusway.com/users/",userInfo)
         console.log(data)
         dispatch(registerSuccess(data))
     } catch (error) {
